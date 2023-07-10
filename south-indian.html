@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <meta name="description" content="Netflix clone using bootsrap 5">
+    <title>Netflix Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+        
+/* CSS for mobile view */
+@media only screen and (max-width: 767px) {
+
+body {
+ margin: 3%;
+}
+}
+   </style>
+
+</head>
+<body class="bg-black">
+    <div id="intro">
+        <nav class="navbar bg-black border-bottom border-bottom-dark navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="./images/netflix.png" height="50px" width="100px" alt="Netflix logo" >
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav list-group-horizontal-sm">
+                    <li class="nav-item m-1">
+                      <a class="nav-link active"  href="#home">Home</a>
+                    </li>
+                    <li class="nav-item m-1">
+                      <a class="nav-link active" href="#tv">TV Shows</a>
+                    </li>
+                    <li class="nav-item m-1">
+                      <a class="nav-link active" href="#movies">Movies</a>
+                    </li>
+                </ul>
+                <form class="d-flex m-2" role="search">
+                  <input class="form-control w-50" type="search" placeholder="Search">
+                  <button class="btn btn-outline-light " type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
+              </form>
+                </div>  
+                <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+ </nav>
+
+ <div id="south">
+    <h2 class="text-light m-2">South Indian</h2>
+<ul class="list-group list-group-horizontal">
+  <li>
+            <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+              <img src="./images/master.jpg" class="card-img-top" >
+              <div class="card-img-bottom  m-1 top-50">
+            <h6 class="card-title text-white ">Master</h6>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+    Play
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="250px"
+          src="https://www.youtube.com/embed/JrzK_jJsXho" frameborder="0"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>   
+</div>
+</li>
+
+<li>
+    
+    <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+        <img src="./images/mck.jpg" class="card-img-top" >
+        <div class="card-img-bottom  m-1 top-50">
+      <h6 class="card-title text-white ">MCK</h6>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+Play
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <iframe width="100%" height="250px"
+    src="https://www.youtube.com/embed/oqcXT3tkZD0" frameborder="0"
+    allowfullscreen></iframe>
+  </div>
+</div>
+</div>
+</div>   
+</div>
+
+</li>
+</ul>
+
+<ul class="list-group list-group-horizontal">
+<li>
+    
+    <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+        <img src="./images/dear-comrade.jpg" class="card-img-top" >
+        <div class="card-img-bottom  m-1 top-50">
+      <h6 class="card-title text-white ">Dear Comarade</h6>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+Play
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <iframe width="100%" height="250px"
+    src="https://www.youtube.com/embed/zzhfvt5vZHI" frameborder="0"
+    allowfullscreen></iframe>
+  </div>
+</div>
+</div>
+</div>   
+</div>
+
+</li>
+
+<li>
+    <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+        <img src="./images/dwaraka.jpg" class="card-img-top" >
+        <div class="card-img-bottom  m-1 top-50">
+      <h6 class="card-title text-white ">Dwaraka</h6>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+Play
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <iframe width="100%" height="250px"
+    src="https://www.youtube.com/embed/PXd8Uio4TSs" frameborder="0"
+    allowfullscreen></iframe>
+  </div>
+</div>
+</div>
+</div>   
+</div>
+
+</li>
+</ul>
+
+<ul class="list-group list-group-horizontal">
+<li>
+    <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+        <img src="./images/majili.jpg" class="card-img-top" >
+        <div class="card-img-bottom  m-1 top-50">
+      <h6 class="card-title text-white ">Majili</h6>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+Play
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <iframe width="100%" height="250px"
+    src="https://www.youtube.com/embed/lIIvFgwREsI" frameborder="0"
+    allowfullscreen></iframe>
+  </div>
+</div>
+</div>
+</div>   
+</div>
+
+</li>
+<li>
+    <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+        <img src="./images/dhruva.jpg" class="card-img-top" >
+        <div class="card-img-bottom  m-1 top-50">
+      <h6 class="card-title text-white ">Dhruva</h6>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+Play
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <iframe width="100%" height="250px"
+    src="https://www.youtube.com/embed/HntqNeGjcvQ" frameborder="0"
+    allowfullscreen></iframe>
+  </div>
+</div>
+</div>
+</div>   
+</div>
+
+</li>
+</ul>
+
+
+<ul class="list-group list-group-horizontal">
+    <li>
+        <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+            <img src="./images/check.jpg" class="card-img-top" >
+            <div class="card-img-bottom  m-1 top-50">
+          <h6 class="card-title text-white ">Check</h6>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal13">
+    Play
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="250px"
+        src="https://www.youtube.com/embed/NpJ6lnbgi_s" frameborder="0"
+        allowfullscreen></iframe>
+      </div>
+    </div>
+    </div>
+    </div>   
+    </div>
+    
+    </li>
+    <li>
+        <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+            <img src="./images/dumdaar-khiladi.jpg" class="card-img-top" >
+            <div class="card-img-bottom  m-1 top-50">
+          <h6 class="card-title text-white ">Dumdaar Khiladi</h6>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal14">
+    Play
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="250px"
+        src="https://www.youtube.com/embed/zAVmwt_U4c0" frameborder="0"
+        allowfullscreen></iframe>
+      </div>
+    </div>
+    </div>
+    </div>   
+    </div>
+    
+    </li>
+    </ul>
+
+
+    <ul class="list-group list-group-horizontal">
+        <li>
+            <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+                <img src="./images/shrinivasa-kalyanam.jpg" class="card-img-top" >
+                <div class="card-img-bottom  m-1 top-50">
+              <h6 class="card-title text-white ">Srinivasa kalyanam</h6>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal15">
+        Play
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="250px"
+            src="https://www.youtube.com/embed/IbPKZOY2yq8" frameborder="0"
+            allowfullscreen></iframe>
+          </div>
+        </div>
+        </div>
+        </div>   
+        </div>
+        
+        </li>
+        <li>
+            <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+                <img src="./images/mr-majnu.jpg" class="card-img-top" >
+                <div class="card-img-bottom  m-1 top-50">
+              <h6 class="card-title text-white ">Mr Majnu</h6>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal16">
+        Play
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="250px"
+            src="https://www.youtube.com/embed/zR52MgYhm_Q" frameborder="0"
+            allowfullscreen></iframe>
+          </div>
+        </div>
+        </div>
+        </div>   
+        </div>
+        
+        </li>
+        </ul>
+
+
+
+        <ul class="list-group list-group-horizontal">
+            <li>
+                <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+                    <img src="./images/Super-Khiladi-3.jpg" class="card-img-top" >
+                    <div class="card-img-bottom  m-1 top-50">
+                  <h6 class="card-title text-white ">Super Khiladi 3</h6>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal17">
+            Play
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <iframe width="100%" height="250px"
+                src="https://www.youtube.com/embed/vkuiI430d_0" frameborder="0"
+                allowfullscreen></iframe>
+              </div>
+            </div>
+            </div>
+            </div>   
+            </div>
+            
+            </li>
+            <li>
+                <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+                    <img src="./images/no1dilwala.jpg" class="card-img-top" >
+                    <div class="card-img-bottom  m-1 top-50">
+                  <h6 class="card-title text-white ">No. 1 Dilwala</h6>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal18">
+            Play
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <iframe width="100%" height="250px"
+                src="https://www.youtube.com/embed/1-Au1PmzkI0" frameborder="0"
+                allowfullscreen></iframe>
+              </div>
+            </div>
+            </div>
+            </div>   
+            </div>
+            
+            </li>
+            </ul>
+
+
+
+            <ul class="list-group list-group-horizontal">
+                <li>
+                    <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+                        <img src="./images/vip2.jpg" class="card-img-top" >
+                        <div class="card-img-bottom  m-1 top-50">
+                      <h6 class="card-title text-white ">VIP 2</h6>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal19">
+                Play
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="100%" height="250px"
+                    src="https://www.youtube.com/embed/SwuIvm9y-M8" frameborder="0"
+                    allowfullscreen></iframe>
+                  </div>
+                </div>
+                </div>
+                </div>   
+                </div>
+                
+                </li>
+                <li>
+                    <div class="card m-2 bg-black border-light" style="width: 10rem; ">
+                        <img src="./images/Heart-Attack2.jpg" class="card-img-top" >
+                        <div class="card-img-bottom  m-1 top-50">
+                      <h6 class="card-title text-white ">Heart Attack 2</h6>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal20">
+                Play
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="100%" height="250px"
+                    src="https://www.youtube.com/embed/SL1lH0GZ4Sw" frameborder="0"
+                    allowfullscreen></iframe>
+                  </div>
+                </div>
+                </div>
+                </div>   
+                </div>
+                
+                </li>
+                </ul>
+        
+    
+ 
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+ <br>
+ <footer align="center">
+   <a  href="http://github.com/piyushpatilx"><button class="btn btn-light font-monospace m-3"> 
+     <img src="./images/github-m.svg"  alt="github logo" height="30px" width="30px"> Made by Piyush Patil</button></a>
+ </footer>
+</body>
+</html>
